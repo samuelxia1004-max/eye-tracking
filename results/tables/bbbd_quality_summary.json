@@ -1,0 +1,10 @@
+{
+  "input_records": 588,
+  "eligible_records": 502,
+  "excluded_records": 86,
+  "input_pairs": 294,
+  "eligible_pairs": 251,
+  "excluded_pairs": 43,
+  "eligible_participants": 52,
+  "rule": "exclude a paired participant-video unit when either session lacks any primary channel mean at the frozen original-valid window threshold"
+}

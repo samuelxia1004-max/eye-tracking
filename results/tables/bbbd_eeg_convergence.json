@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "n_records": 493,
+  "n_participants": 52,
+  "n_videos": 11,
+  "condition_adjusted_fixed_effect_coefficient": 0.01783593416422081,
+  "two_way_cluster_se": 0.007910240241636146,
+  "ci_low": 0.0023321481815545483,
+  "ci_high": 0.03333972014688707,
+  "p_value": 0.024146484923307968,
+  "paired_change_correlation_r": 0.07083162228231751,
+  "paired_change_correlation_p": 0.27040575992829485,
+  "interpretation": "convergent association; not an independent attention effect"
+}

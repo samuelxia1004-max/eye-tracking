@@ -1,0 +1,9 @@
+# Compatible minimum set for the boundaryisc / dual-null package.
+# For exact frozen versions used in the original run, see requirements-lock.txt.
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.8
+statsmodels>=0.14
+scikit-learn>=1.3
+pytest>=8.0

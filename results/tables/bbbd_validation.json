@@ -1,0 +1,21 @@
+{
+  "n_records": 502.0,
+  "auc": 0.8766527515436262,
+  "balanced_accuracy": 0.8007968127490039,
+  "brier": 0.1475301094388637,
+  "observed_mean_paired_probability_difference": 0.36459673924844166,
+  "p_value": 9.999000099990002e-05,
+  "n_permutations": 10000,
+  "n_participants": 52,
+  "observed_auc": 0.8766527515436262,
+  "ci_low": 0.8173783019802345,
+  "ci_high": 0.9321425441529976,
+  "n_bootstrap": 5000,
+  "calibration_intercept": 0.022571723546498612,
+  "calibration_slope": 1.3103064479495794,
+  "intercept_se_hc3": 0.11268004261713165,
+  "slope_se_hc3": 0.14930528715861593,
+  "gate_rule": "participant sign-flip p <= .05 and two-way bootstrap 95% AUC interval excludes .50",
+  "gate_passed": true,
+  "order_repetition_confounded": true
+}

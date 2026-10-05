@@ -1,0 +1,5 @@
+stage,input,output
+BBBD benchmark,official paired ocular derivatives,frozen three-channel logistic score
+Sherlock transport,pooled leave-one-out ocular ISC,global and boundary contrasts
+label null,fixed annotated boundaries,group exchangeability p-value
+location null,fixed participant groups,boundary-location p-value

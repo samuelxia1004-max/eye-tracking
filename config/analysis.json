@@ -1,0 +1,144 @@
+{
+  "status": "frozen_before_inferential_reanalysis_2026-08-20T03:38:12Z",
+  "project_root": "[SET_TO_THIS_REPO_ROOT]",
+  "seed": 20260816,
+  "rate_hz": 10,
+  "window_seconds": 10,
+  "sensitivity_windows_seconds": [
+    5,
+    10,
+    20
+  ],
+  "channels": [
+    "x",
+    "y",
+    "pupil"
+  ],
+  "primary_feature_columns": [
+    "isc_x_mean",
+    "isc_y_mean",
+    "isc_pupil_mean"
+  ],
+  "bbbd": {
+    "experiments": [
+      2,
+      3
+    ],
+    "expected_published_included": {
+      "2": 31,
+      "3": 29
+    },
+    "expected_paired_participants": {
+      "2": 31,
+      "3": 28
+    },
+    "expected_paired_participant_video_units": {
+      "2": 142,
+      "3": 152
+    },
+    "expected_videos": {
+      "2": 5,
+      "3": 6
+    },
+    "conditions": [
+      "attentive",
+      "distracted"
+    ],
+    "primary_min_original_valid_fraction": 0.5,
+    "sensitivity_original_valid_fractions": [
+      0.0,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "outer_cv_participant_folds": 5,
+    "regularization_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "eeg_validation": {
+      "enabled": true,
+      "rate_hz": 16,
+      "components": 3
+    }
+  },
+  "sherlock": {
+    "expected_participants": 104,
+    "expected_groups": {
+      "Short-R": 30,
+      "Long": 25,
+      "Schema": 26,
+      "Short-P": 23
+    },
+    "expected_boundaries": 18,
+    "target_group": "Short-R",
+    "boundaries_10hz": [
+      340,
+      1530,
+      2300,
+      3600,
+      4790,
+      5290,
+      7000,
+      7540,
+      8380,
+      8610,
+      8800,
+      9290,
+      9650,
+      10260,
+      10600,
+      11130,
+      11810,
+      12450
+    ]
+  },
+  "specification_grid": {
+    "channels": [
+      "x",
+      "y",
+      "pupil",
+      "gaze",
+      "composite"
+    ],
+    "estimators": [
+      "pairwise",
+      "loo"
+    ],
+    "transforms": [
+      "raw",
+      "fisher"
+    ],
+    "window_seconds": [
+      5,
+      10,
+      20
+    ],
+    "references": [
+      "within",
+      "all"
+    ]
+  },
+  "inference": {
+    "label_permutations": 10000,
+    "temporal_shifts": 10000,
+    "bootstrap_draws": 5000,
+    "alpha": 0.05,
+    "two_sided": true,
+    "plus_one_p": true
+  },
+  "inputs": {
+    "bbbd_archives": {
+      "2": "[LOCAL_PATH]/data/raw/bbbd/zips/experiment2.zip",
+      "3": "[LOCAL_PATH]/data/raw/bbbd/zips/experiment3.zip"
+    },
+    "sherlock_cache": "[LOCAL_PATH]/data/derived/sherlock_from_boundaryisc_or_OSF/commercial_10hz.npz",
+    "sherlock_participant_manifest": "[LOCAL_PATH]/data/derived/sherlock_from_boundaryisc_or_OSF/participant_manifest.csv",
+    "sherlock_frozen_run": "[LOCAL_PATH]/data/derived/sherlock_from_boundaryisc_or_OSF/frozen_run.json"
+  },
+  "_release_note": "Absolute local paths replaced with placeholders for public release; restore lawful local paths before reproduce."
+}

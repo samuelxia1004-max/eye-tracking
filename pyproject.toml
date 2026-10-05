@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boundaryisc"
+version = "0.2.0"
+description = "Crossed-null inference and transported distracted-session benchmarks for naturalistic eye tracking"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "pandas>=2.0", "matplotlib>=3.8", "statsmodels>=0.14", "scikit-learn>=1.4"]
+
+[project.scripts]
+boundaryisc = "boundaryisc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

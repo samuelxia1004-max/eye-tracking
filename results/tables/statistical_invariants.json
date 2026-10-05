@@ -1,0 +1,66 @@
+{
+  "bbbd_input_records": 588,
+  "bbbd_eligible_records": 502,
+  "bbbd_eligible_pairs": 251,
+  "bbbd_eligible_participants": 52,
+  "bbbd_auc": 0.8766527515436262,
+  "bbbd_auc_ci": [
+    0.8173783019802345,
+    0.9321425441529976
+  ],
+  "bbbd_signflip_p": 9.999000099990002e-05,
+  "bbbd_gate_passed": true,
+  "sherlock_n": 104,
+  "sherlock_group_counts": {
+    "Short-R": 30,
+    "Long": 25,
+    "Schema": 26,
+    "Short-P": 23
+  },
+  "sherlock_boundaries": 18,
+  "global_effect": -0.7538564566896319,
+  "global_ci": [
+    -0.7737011496362803,
+    -0.7284200975998275
+  ],
+  "global_p": 9.999000099990002e-05,
+  "boundary_effect": -0.04284098034065232,
+  "boundary_ci": [
+    -0.14224284181722302,
+    0.05952926195749615
+  ],
+  "boundary_label_p": 0.0012998700129987,
+  "boundary_temporal_p": 0.5225477452254774,
+  "boundary_iut_p": 0.5225477452254774,
+  "boundary_specific_claim_supported": false,
+  "raw_specifications": 120,
+  "raw_specifications_negative": 72,
+  "eeg_adjusted_beta": 0.01783593416422081,
+  "eeg_ci": [
+    0.0023321481815545483,
+    0.03333972014688707
+  ],
+  "eeg_p": 0.024146484923307968,
+  "memory": [
+    {
+      "outcome": "remember",
+      "coefficient": 0.340750515646269,
+      "se_hc3": 0.4145675045481392,
+      "ci_low": -0.4717868624287289,
+      "ci_high": 1.153287893721267,
+      "p_value": 0.4111098090562071,
+      "n": 99,
+      "interpretation": "association"
+    },
+    {
+      "outcome": "detail",
+      "coefficient": 2.4411483473211835,
+      "se_hc3": 1.495310468452331,
+      "ci_low": -0.489606316551102,
+      "ci_high": 5.371903011193469,
+      "p_value": 0.1025665962474184,
+      "n": 99,
+      "interpretation": "association"
+    }
+  ]
+}

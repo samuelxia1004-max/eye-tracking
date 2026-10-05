@@ -1,0 +1,28 @@
+{
+  "seed": 20260816,
+  "replicates": 250,
+  "baseline": {
+    "target_n": 30,
+    "control_n": 74,
+    "timepoints": 600,
+    "boundaries": [100, 200, 300, 400, 500],
+    "window_samples": 40,
+    "ar1": 0.75,
+    "smooth_nonstationarity": 0.0,
+    "global_signal": 0.35,
+    "common_boundary_signal": 0.65,
+    "interaction_signal": 0.65
+  },
+  "scenarios": [
+    {"name": "baseline"},
+    {"name": "low_autocorrelation", "ar1": 0.25},
+    {"name": "high_autocorrelation", "ar1": 0.9},
+    {"name": "smaller_sample", "target_n": 15, "control_n": 37},
+    {"name": "more_boundaries", "boundaries": [60, 110, 160, 210, 260, 310, 360, 410, 460, 510]},
+    {"name": "smooth_nonstationarity", "smooth_nonstationarity": 0.75},
+    {"name": "weaker_signals", "global_signal": 0.2, "common_boundary_signal": 0.35, "interaction_signal": 0.35}
+  ],
+  "label_permutations": 199,
+  "temporal_shifts": 199,
+  "alpha": 0.05
+}
